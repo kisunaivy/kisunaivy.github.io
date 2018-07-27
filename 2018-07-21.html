@@ -259,7 +259,8 @@
 
         #banner-swiper {
             width: 100%;
-            height: 700px;
+            height: 800px;
+          
             
         }
         #banner-swiper .swiper-slide {
@@ -273,7 +274,7 @@
             margin: auto;
         }
 
-        .title1 {
+        .title1{
             color: #A0522D;
             padding: 50px 0 25px 0;
             text-align: center;
@@ -290,7 +291,7 @@
         #seastion1-swiper {
             width: 80%;
             height: 700px;
-            padding-bottom:30px ;
+            margin-bottom:25px; 
         }
 
         #seastion1-swiper .swiper-slide {
@@ -348,12 +349,11 @@
         }
 
         #seastion1-swiper {
-            height: 800px;
+            height: 700px;
         }
 
         #seastion1-swiper .swiper-slide:hover .cover {
             height: 100%;
-
             background-color: rgba(222, 184, 135, 0.5);
             padding: 300px 0 0 0;
         }
@@ -368,10 +368,14 @@
             width: 100%;
             height: 600px;
             color: #CD853F;
-            padding:0 0 25px 0;
+            padding:25px ;
             font-size: 30px;
-            background-color: #F5F3E5;
+            background-image: url("img/歷程-01-01.png");
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
+
     </style>
 </head>
 
@@ -429,12 +433,12 @@
 
 
     <div class="seastion1">
-        <h1 class="title1">故事</h1>
+        <div class="title1">故事</div>
         <h2 class="sm-title1">館長介紹 </h2>
         <div class="swiper-container" id="seastion1-swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="img/館長介紹/大城01.jpg" alt="">
+                    <img src="img/館長介紹/大城.jpg" alt="">
                     <div class="cover">
                         <h2 class="s1-name">大城莉莉</h2>
                         <h3 class="lg-text">莉丰慧民V館 館長</h3>
@@ -444,7 +448,7 @@
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="img/館長介紹/徐雯慧.jpg" alt="">
+                    <img src="img/館長介紹/徐雯慧01.jpg" alt="">
                     <div class="cover">
                         <h2 class="s1-name">徐雯慧</h2>
                         <h3 class="lg-text">莉丰慧民V館 館長、徐園長護生園 園長</h3>
@@ -489,9 +493,15 @@
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
         </div>
-        <h2 class="sm-title2">歷程</h2>
+    <h2 class="sm-title2">歷程</h2>
+    <div class="sm-title2-img"></div>
+    </div>
+    <div class="seastion2">
+        <div class="title1">TNVR</div>
+
     </div>
 
+ 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
