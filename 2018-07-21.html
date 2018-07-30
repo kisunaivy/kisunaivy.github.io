@@ -50,7 +50,7 @@
             padding-top: 9px;
         }
 
-        span.bar {
+        .bar {
             width: 80%;
             height: 4px;
             background-color: red;
@@ -67,15 +67,15 @@
             position: absolute;
         }
 
-        span.bar::before {
+        .bar::before {
             transform: translateY(-9px);
         }
 
-        span.bar::after {
+        .bar::after {
             transform: translateY(9px);
         }
 
-        .bars.active span.bar {
+        .bars.active .bar {
             background-color: transparent;
         }
 
@@ -389,7 +389,7 @@
             background-image: url("img/歷程.png");
             background-position: 50% 50%;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
         }
 
         .s2-title1 {
@@ -401,8 +401,8 @@
         }
 
         .s2-title1-img {
-            width: 80% auto;
-            height: 390px;
+            width: 100% ;
+            height: 600px;
             color: #CD853F;
             padding: 50px;
             font-size: 30px;
@@ -410,6 +410,7 @@
             background-position: 60% 90%;
             background-repeat: no-repeat;
             background-size: cover;
+            margin: 0 auto;
         }
 
 
@@ -627,44 +628,47 @@
             width: 100%;
         }
 
-        .s4-blood {
-            width: 100%;
+        .s4-blood-img {
+            width: 80%;
             height: 300px;
             background-image: url("img/救護站/blood.jpg");
-            background-position: 10px 40px;
+            background-position: 10px 10px;
             background-repeat: no-repeat;
             background-size: contain;
-            margin: 20px;
+            margin: 0 auto;
         }
 
         .s4-condition {
-            width: 100%;
+            width: 80%;
             height: 600px;
             position: relative;
+            margin: 0 auto;
         }
 
-        .s4-dog {
+        .s4-dog-img {
             width: 50%;
             height: 600px;
-            background-image: url("img/救護站/dog.jpg");
+            background-image: url("img/救護站/dog.png");
             background-position: 70px 50px;
             background-repeat: no-repeat;
             background-size: contain;
             position: absolute;
             top: 0;
             left: 0;
+
         }
 
-        .s4-cat {
+        .s4-cat-img {
             width: 50%;
             height: 600px;
-            background-image: url("img/救護站/cat.jpg");
+            background-image: url("img/救護站/cat2.jpg");
             background-position: 70px 50px;
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             position: absolute;
             top: 0;
             right: 0;
+           
         }
 
         .s4-cover {
@@ -680,12 +684,12 @@
             overflow: hidden;
         }
 
-        .s4-dog:hover .s4-cover {
+        .s4-dog-img:hover .s4-cover {
             height: 100%;
             background-color:  rgba(119, 163, 240,0.8);
         }
 
-        .s4-cat:hover .s4-cover {
+        .s4-cat-img:hover .s4-cover {
             height: 100%;
             background-color:  rgba(119, 163, 240,0.8);
         }
@@ -881,8 +885,6 @@
                 <img src="img/banner/051.jpg" alt="">
             </div>
         </div>
-        <!-- Add Pagination -->
-
         <!-- Add Arrows -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -1035,9 +1037,9 @@
     <div class="seastion4">
         <div class="title1">救護站</div>
         <h2 class="sm-title1">貓狗捐血過程</h2>
-        <div class="s4-blood"></div>
+        <div class="s4-blood-img"></div>
         <div class="s4-condition">
-            <div class="s4-dog">
+            <div class="s4-dog-img">
                 <div class="s4-cover">
                     <h2>汪汪の捐血條件</h2>
                     <p>年紀：一歲以上、八歲以下</p>
@@ -1047,7 +1049,7 @@
                     <p>捐血量：16-18毫升/每公斤</p>
                 </div>
             </div>
-            <div class="s4-cat">
+            <div class="s4-cat-img">
                 <div class="s4-cover">
                     <h2>喵喵の捐血條件</h2>
                     <p>年紀：一歲以上、六歲以下</p>
@@ -1090,7 +1092,7 @@
 
     <footer>
             <div class="container">
-                <span>Copyright ©莉丰慧民V關懷動物協會 2018 保留一切權利。</span>
+                <span>©莉丰慧民V關懷動物協會 2018 僅用於課程學習用途 素材如侵權 請來信告知</span>
             </div>
         </footer>
     
