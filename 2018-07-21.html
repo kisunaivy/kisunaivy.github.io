@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>莉丰慧民Ｖ</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
@@ -16,252 +17,99 @@
             padding: 0;
         }
 
-        .nav-logo {
-            width: 70%;
-            height: 70px;
-            background-color: white;
-        }
-
-        .logo {
-            width: 70px;
-            height: 70px;
-            background-image: url("img/logo.png");
-            background-position: 0 50%;
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
+        .logo{
+			width: 80px;
+			height: 80px;
+			background-image: url('img/logo.png');
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 50%;
+			position:absolute;
+			left: 20px; 
+			top: 10px;
+		}
 
         body {
+            height: 5000px;
             position: relative;
-            min-width: 500px;
-            min-height: 200px;
-            font-family: 'Montserrat';
-            height: 100vmax;
+            background-color: rgba(255, 244, 216,0.5);
         }
 
-        .bars {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            top: 20px;
-            right: 20px;
-            cursor: pointer;
-            z-index: 101;
-            padding-top: 9px;
-        }
+        ul{
+			list-style-type:none;
+			padding: 0;
+		}
+		.nav{
+			width: 100%;
+			height: 100px;
+			background-color: rgba(255, 244, 216,0.5);
+			position: relative;           
+		}
 
-        .bar {
-            width: 80%;
-            height: 4px;
-            background-color: red;
-            position: absolute;
-        }
-
-        span.bar::before,
-        span.bar::after {
-            content: "";
-            display: block;
-            background-color: red;
-            width: 80%;
-            height: 4px;
-            position: absolute;
-        }
-
-        .bar::before {
-            transform: translateY(-9px);
-        }
-
-        .bar::after {
-            transform: translateY(9px);
-        }
-
-        .bars.active .bar {
-            background-color: transparent;
-        }
-
-        .bars.active span::before {
-            animation: top-bar 1s;
-            animation-fill-mode: forwards;
-        }
-
-        .bars.active span::after {
-            animation: bottom-bar 1s;
-            animation-fill-mode: forwards;
-        }
-
-        /* Navbar Links CSS */
-
-        #nav {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            transition: all 1s;
-            z-index: -1;
-            overflow: hidden;
-            opacity: 0;
-        }
-
-        #nav a {
-            color: red;
-            text-decoration: none;
-            line-height: 70vw;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            text-indent: 50vw;
-            border-radius: 50%;
-            transition: all .5s;
-        }
-
-        #nav a:hover {
-            background: rgb(119, 163, 240);
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        .visible {
-            z-index: 100 !important;
-            opacity: 1 !important;
-        }
-
-        .shape-circle {
-            border-radius: 50%;
-            width: 20vw;
-            height: 20vw;
-            top: -10vw;
-            right: -10vw;
-            position: absolute;
-            transition: all 1s ease-in-out;
-            background: rgb(153, 175, 212);
-            box-shadow: 0 0px 0px rgba(92, 106, 129, 0.5);
-        }
-
-        nav.visible li:first-child {
-            width: 140vw;
-            height: 140vw;
-            top: -70vw;
-            right: -70vw;
-            z-index: 5;
-            transition: all .5s ease-in-out;
-            box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
-        }
-
-        nav.visible li:nth-child(2) {
-            width: 120vw;
-            height: 120vw;
-            top: -60vw;
-            right: -60vw;
-            z-index: 6;
-            transition: all .6s ease-in-out;
-            box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
-        }
-
-        nav.visible li:nth-child(3) {
-            width: 100vw;
-            height: 100vw;
-            top: -50vw;
-            right: -50vw;
-            z-index: 7;
-            transition: all .7s ease-in-out;
-            box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
-        }
-
-        nav.visible li:nth-child(4) {
-            width: 80vw;
-            height: 80vw;
-            top: -40vw;
-            right: -40vw;
-            z-index: 8;
-            transition: all .8s ease-in-out;
-            box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
-        }
-
-        nav.visible li:nth-child(5) {
-            width: 60vw;
-            height: 60vw;
-            top: -30vw;
-            right: -30vw;
-            z-index: 9;
-            transition: all .9s ease-in-out;
-            box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
-        }
-
-        nav.visible li:last-child {
-            width: 40vw;
-            height: 40vw;
-            top: -20vw;
-            right: -20vw;
-            z-index: 10;
-            transition: all .10s ease-in-out;
-            box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
-        }
-
-        nav.visible li:first-child a {
-            line-height: 200vw !important;
-            text-indent: 12vw !important;
-        }
-
-        nav.visible li:nth-child(2) a {
-            line-height: 175vw !important;
-            text-indent: 11vw !important;
-        }
-
-        nav.visible li:nth-child(3) a {
-            line-height: 150vw !important;
-            text-indent: 10vw !important;
-        }
-
-        nav.visible li:nth-child(4) a {
-            line-height: 123vw !important;
-            text-indent: 11vw !important;
-        }
-
-        nav.visible li:nth-child(5) a {
-            line-height: 95vw !important;
-            text-indent: 11vw !important;
-        }
-
-        nav.visible li:last-child a {
-            line-height: 65vw !important;
-            text-indent: 13vw !important;
-        }
-
-        /* Main Body CSS */
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-        }
-
-        @keyframes top-bar {
-            50% {
-                transform: translateY(0);
-            }
-            100% {
-                transform: rotate(45deg) translateY(0);
-            }
-        }
-
-        @keyframes bottom-bar {
-            50% {
-                transform: translateY(0);
-            }
-            100% {
-                transform: rotate(-45deg) translateY(0);
-            }
-        }
+        .relative{
+			display: inline-block;
+			width: 80px;
+			height: 30px;
+			background-color: gray;
+			position: absolute;
+			bottom: 20px;
+			text-align: center;
+			line-height: 30px;
+            z-index: 2;
+            
+		}
+		.relative.a{
+			right: 420px;
+		}
+		.relative.b{
+			right: 320px;
+		}
+		.relative.c{
+			right: 220px;
+		}
+		.relative.d{
+			right: 120px;
+		}
+        .relative.e{
+			right: 20px;
+		}
+		.relative > a{
+			text-decoration: none;
+			color: orange;
+			text-align: center;
+		}
+		.absolute{
+			position: absolute;
+			width: 100%;
+			height: 0;
+			background-color: gray;
+			margin: 0;
+			transition: 0.8s;
+			display: block;
+			overflow: hidden;
+		}
+		.absolute > li{
+			border-bottom: 1px solid white;
+			padding-right:5px; 
+		}
+		.absolute > li > a{
+			display: inline-block;
+			text-decoration: none;
+			color: orange;
+		}
+		.relative:hover > .absolute.a{
+			display: block;
+			height: 62px;
+		}
+		/* .relative:hover > .absolute.b{ */
+			/* display: block; */
+			/* height: 93px; */
+		/* } */
 
         #banner-swiper {
             width: 100%;
-            height: 60vh;
+           
         }
 
         #banner-swiper .swiper-slide {
@@ -280,14 +128,14 @@
         .seastion1 {
             width: 80%;
             margin: auto;
+            text-shadow: #CD853F;
         }
 
         .title1 {
             color: #A0522D;
             padding: 50px 0 25px 0;
             text-align: center;
-            font-size: 50px;
-            
+            font-size: 50px;    
         }
 
         .sm-title1 {
@@ -297,8 +145,7 @@
         }
 
         #seastion1-swiper {
-            width: 80%;
-            height: 800px;
+            width: 80%;  
             margin-bottom: 25px;
         }
 
@@ -355,7 +202,7 @@
         }
 
         #seastion1-swiper {
-            height: 700px;
+          
         }
 
         #seastion1-swiper .swiper-slide:hover .cover {
@@ -392,6 +239,12 @@
             background-size: contain;
         }
 
+        .seastion2{
+            width: 80%;
+            margin: auto;
+            
+        }
+
         .s2-title1 {
             color: #A0522D;
             padding: 0 0 25px 0;
@@ -406,28 +259,26 @@
             color: #CD853F;
             padding: 50px;
             font-size: 30px;
-            background-image: url("img/tnvr.jpg");
-            background-position: 60% 90%;
+            background-image: url("img/tnvr.png");
+            background-position: 60% 50%;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
             margin: 0 auto;
         }
 
 
         .seastion3 {
-            width: 100%;
-            height: 700px;
+            margin: 0;
+            padding: 0;
+            width: 100%;  
+            display: flex;
             display: -webkit-flex;
             justify-content: center;
             -webkit-justify-content: center;
             align-items: center;
             -webkit-align-items: center;
-            display: inline-block;
-        }
-
-        .seastion3 {
-            background-color: rgba(119, 163, 240,0.3);
-            margin-bottom: 50px;
+            background-color: rgba(255, 244, 216,1);
+            display: inline;
         }
 
         .carousel {
@@ -481,11 +332,9 @@
             order: 2;
             align-self: flex-end;
             flex-basis: 60%;
-
             -webkit-order: 2;
             -webkit-align-self: flex-end;
             -webkit-flex-basis: 60%;
-
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -631,8 +480,8 @@
         .s4-blood-img {
             width: 80%;
             height: 300px;
-            background-image: url("img/救護站/blood.jpg");
-            background-position: 10px 10px;
+            background-image: url("img/救護站/抽血順序.png");
+            background-position: 50px 0;
             background-repeat: no-repeat;
             background-size: contain;
             margin: 0 auto;
@@ -648,8 +497,8 @@
         .s4-dog-img {
             width: 50%;
             height: 600px;
-            background-image: url("img/救護站/dog.png");
-            background-position: 70px 50px;
+            background-image: url("img/救護站/dog-01.png");
+            background-position: 70px 20px;
             background-repeat: no-repeat;
             background-size: contain;
             position: absolute;
@@ -661,7 +510,7 @@
         .s4-cat-img {
             width: 50%;
             height: 600px;
-            background-image: url("img/救護站/cat2.jpg");
+            background-image: url("img/救護站/cat.png");
             background-position: 70px 50px;
             background-repeat: no-repeat;
             background-size: cover;
@@ -714,8 +563,15 @@
             background-size: contain;
         }
         .s4-doctor-text{
+            width: 80%;
+            background-color: rgba(119, 163, 240,0.8);
             letter-spacing: 5pt;
             font-size: 15px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            border: 5px bold darkred;
+
             
         }
 
@@ -830,11 +686,30 @@
         #imgstack a:nth-of-type(4):hover {
             margin-top: -10px;
         }
-
+        
         footer {
             background-color:  rgba(119, 163, 240,0.6);
             height: 30px;
             text-align: center;
+        }
+
+         #backtop{
+            width: 60px;
+            height: 50px;
+            color: darkred;
+            position: fixed;
+            bottom: 100px;
+            right: 100px;
+            background-color: #92bae6;
+            border-radius: 50%;
+            
+        }
+        @media screen and (max-width:1600px){
+            #seastion1-swiper {
+                width: 80%; 
+                height: 700; 
+                margin-bottom: 25px;
+            }
         }
 
     </style>
@@ -842,36 +717,35 @@
 
 <body>
 
-    <div class="nav-logo">
-        <div class="logo"></div>
-        <div class="bars" id="nav-action">
-            <span class="bar"> </span>
-        </div>
-    </div>
-
     <!--Navbar Links-->
-    <nav id="nav">
-        <ul>
-            <li class="shape-circle circle-one">
-                <a href="#">暖心時刻</a>
-            </li>
-            <li class="shape-circle circle-two">
-                <a href="#">救護站</a>
-            </li>
-            <li class="shape-circle circle-three">
-                <a href="#">毛小孩之家</a>
-            </li>
-            <li class="shape-circle circle-four">
-                <a href="#">TNVR</a>
-            </li>
-            <li class="shape-circle circle-five">
-                <a href="#">故事</a>
-            </li>
-            <li class="shape-circle circle-six">
-                <a href="#">首頁</a>
-            </li>
-        </ul>
-    </nav>
+    <div class="nav">
+		<div class="logo"><a href=""></a></div>
+		<div>
+			<div class="relative a">
+				<a href="#story">故事</a>
+				<ul class="absolute a">
+					<li><a href="#people">館長介紹</a></li>
+					<li><a href="#course">歷程</a></li>
+				</ul>
+            </div>
+            <div class="relative b">
+				<a href="#tnvr">TNVR</a>
+            </div>
+			<div class="relative c">
+				<a href="#kidhome">毛小孩之家</a>
+			</div>
+			<div class="relative d">
+				<a href="#ambulance">救護站</a>
+				<ul class="absolute a">
+					<li><a href="#blood">捐血犬貓</a></li>
+					<li><a href="#doctor">醫療犬</a></li>
+				</ul>		
+            </div>
+            <div class="relative e">
+				<a href="#Warmheart">暖心時刻</a>
+			</div>
+		</div>
+	</div>
 
     <div class="swiper-container" id="banner-swiper">
         <div class="swiper-wrapper">
@@ -890,16 +764,16 @@
         <div class="swiper-button-prev"></div>
     </div>
 
-    <h1 class="slogan">－以認養代替購買，以結紮代替撲殺－</h1>
+    <h1 class="slogan" >－以認養代替購買，以結紮代替撲殺－</h1>
 
     <!--故事-->
-    <div class="seastion1">
+    <div class="seastion1" id="story">
         <div class="title1">故事</div>
-        <h2 class="sm-title1">館長介紹 </h2>
+        <h2 class="sm-title1" id="people">館長介紹 </h2>
         <div class="swiper-container" id="seastion1-swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="img/館長介紹/大城01.jpg" alt="">
+                    <img src="img/館長介紹/大城2.jpg" alt="">
                     <div class="cover">
                         <h2 class="s1-name">
                             <a href="https://www.facebook.com/profile.php?id=100004082835401">大城莉莉</a></h2>                           
@@ -958,18 +832,18 @@
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
         </div>
-        <h2 class="sm-title2">歷程</h2>
+        <h2 class="sm-title2" id="course">歷程</h2>
         <div class="sm-title2-img"></div>
     </div>
 
     <!--TNVR-->
-    <div class="seastion2">
+    <div class="seastion2" id="tnvr">
         <div class="s2-title1">TNVR</div>
-        <div class="s2-title1-img"></div>
+        <div class="s2-title1-img"  data-aos="fade-right" data-aos-duration="2000"></div>
     </div>
 
     <!--毛小孩之家-->
-    <div class="seastion3">
+    <div class="seastion3" id="kidhome">
         <div class="title1">毛小孩之家</div>
         <div class="carousel">
             <div class="carousel__nav">
@@ -991,9 +865,9 @@
                         <h2 class="carousel-item__subtitle">The grand moment </h2>
                         <h1 class="carousel-item__title">宜蘭北館-飛翔蜜境</h1>
                         <p class="carousel-item__description">
-                            宜蘭市冬山鄉武淵村三堵二路151號
-                            03-959-0953
-                            週二 － 週日：10:00 - 17:00
+                            <br> 宜蘭市冬山鄉武淵村三堵二路151號
+                            <br>03-959-0953
+                            <br>週二 － 週日：10:00 - 17:00                          
                         </p>
                         <a href="https://www.facebook.com/pg/lifhg/about/?ref=page_internal" class="carousel-item__btn">Facebook</a>
                     </div>
@@ -1006,9 +880,9 @@
                         <h2 class="carousel-item__subtitle">The sweet home </h2>
                         <h1 class="carousel-item__title">台南南館</h1>
                         <p class="carousel-item__description">
-                            台南市將軍區西和里西湖112號
-                            0932-894-669
-                            週六 － 週日：11:00 - 17:00         
+                            <br>台南市將軍區西和里西湖112號
+                            <br>0932-894-669
+                            <br>週六 － 週日：11:00 - 17:00         
                         </p>
                         <a href="https://www.facebook.com/pg/lifhg/about/?ref=page_internal" class="carousel-item__btn">Facebook</a>
                     </div>
@@ -1021,9 +895,9 @@
                         <h2 class="carousel-item__subtitle">The happy home </h2>
                         <h1 class="carousel-item__title">台南狗寶貝護生園</h1>
                         <p class="carousel-item__description">
-                            台南市將軍區西和里西湖112號
-                            0989-546-228
-                            週六 － 週日：11:00 - 17:00
+                            <br>台南市將軍區西和里西湖112號
+                            <br>0989-546-228
+                            <br>週六 － 週日：11:00 - 17:00
                         </p>
                         <a href="https://www.facebook.com/%E5%BE%90%E6%96%87%E8%89%AF%E5%BE%90%E5%9C%92%E9%95%B7%E8%AD%B7%E7%94%9F%E5%9C%92-482873861887397/
                         " class="carousel-item__btn">Facebook</a>
@@ -1034,12 +908,12 @@
     </div>
 
     <!--救護站-->
-    <div class="seastion4">
+    <div class="seastion4" id="ambulance">
         <div class="title1">救護站</div>
         <h2 class="sm-title1">貓狗捐血過程</h2>
-        <div class="s4-blood-img"></div>
-        <div class="s4-condition">
-            <div class="s4-dog-img">
+        <div class="s4-blood-img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000"></div>
+        <div class="s4-condition" id="blood">
+            <div class="s4-dog-img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" data-aos-delay="1000">
                 <div class="s4-cover">
                     <h2>汪汪の捐血條件</h2>
                     <p>年紀：一歲以上、八歲以下</p>
@@ -1049,7 +923,7 @@
                     <p>捐血量：16-18毫升/每公斤</p>
                 </div>
             </div>
-            <div class="s4-cat-img">
+            <div class="s4-cat-img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" data-aos-delay="1000">
                 <div class="s4-cover">
                     <h2>喵喵の捐血條件</h2>
                     <p>年紀：一歲以上、六歲以下</p>
@@ -1061,13 +935,14 @@
             </div>        
         </div>
         <h2 class="blood-bank"><a href="https://www.facebook.com/petblood/">寵物捐血資料庫</a></h2>
-        <h2 class="sm-title1">狗醫生</h2>
-        <div class="s4-doctor"></div>
-        <h4 class="s4-doctor-text">狗醫生的服務內容分為『陪伴活動』及『復健治療』，在『陪伴活動』中服務對象可獲得與動物相伴的樂趣，並增加他們被探視、得到關懷的機會，而『復健治療』則配合復健師的療程設計，協助進行患者復健，例如利用丟球、梳毛、撫摸狗兒、牽狗兒散步等等活動，服務對象自發性地增加局部或全身肢體活動度，或利用狗兒為話題與服務對象進行對話，刺激其口語運用，並且於無形間進行辨識個體、追溯記憶等刺激心智的練習。</h4>
+        <h2 class="sm-title1" id="doctor">狗醫生</h2>
+        <div class="s4-doctor" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="2000"></div>
+        <h4 class="s4-doctor-text" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            狗醫生的服務內容分為『陪伴活動』及『復健治療』，在『陪伴活動』中服務對象可獲得與動物相伴的樂趣，並增加他們被探視、得到關懷的機會，而『復健治療』則配合復健師的療程設計，協助進行患者復健，例如利用丟球、梳毛、撫摸狗兒、牽狗兒散步等等活動，服務對象自發性地增加局部或全身肢體活動度，或利用狗兒為話題與服務對象進行對話，刺激其口語運用，並且於無形間進行辨識個體、追溯記憶等刺激心智的練習。</h4>
     </div>
 
     <!--暖心時刻-->
-    <div class="seastion5">
+    <div class="seastion5" id="Warmheart">
         <div class="title1">暖心時刻</div>
         <h2 class="sm-title1">領養照片</h2>
         <div id="imgstack">
@@ -1090,16 +965,23 @@
         
     </div>
 
+    <button id="backtop">Top</button>
+
     <footer>
             <div class="container">
                 <span>©莉丰慧民V關懷動物協會 2018 僅用於課程學習用途 素材如侵權 請來信告知</span>
             </div>
         </footer>
+
+    
     
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
     <script>
+         AOS.init();
+
         var swiper = new Swiper('#banner-swiper', {
             slidesPerView: 1,
             spaceBetween: 30,
@@ -1114,21 +996,6 @@
             },
         });
 
-        // Setting up the Variables
-        var bars = document.getElementById("nav-action");
-        var nav = document.getElementById("nav");
-
-
-        //setting up the listener
-        bars.addEventListener("click", barClicked, false);
-
-
-        //setting up the clicked Effect
-        function barClicked() {
-            bars.classList.toggle('active');
-            nav.classList.toggle('visible');
-        }
-
         var swiper = new Swiper(' #seastion1-swiper', {
             pagination: {
                 el: '.swiper-pagination',
@@ -1137,8 +1004,8 @@
                     return '<span class="' + className + '">' + (index + 1) + '</span>';
                 },
             },
-
         });
+
         $(function () {
             $('.carousel-item').eq(0).addClass('active');
             var total = $('.carousel-item').length;
@@ -1174,16 +1041,27 @@
                 console.log('prev ' + prev);
             }
         });
-        new Vue({
-            el: "#carousel",
-            data: {
-                slides: 7
-            },
-            components: {
-                "carousel-3d": Carousel3d.Carousel3d,
-                slide: Carousel3d.Slide
+
+         $(window).scroll(function(){
+            //取得目前捲軸,捲動高度
+            var scrollTop = $(window).scrollTop();
+           // console.log("scrollTop")
+            
+            //如果捲軸高度>1000,會執行下方程式碼
+            if(scrollTop > 700){
+                $("#backtop").show();
             }
-        });
+            //否則會執行下方程式碼
+            else{
+                $("#backtop").hide();
+            }                  
+        })
+        $("#backtop").click(function(){
+            console.log("scrollTop")
+                //$(window).scrollTop(0);
+                $('html,body').animate({ scrollTop: 0 }, 'slow');
+                return false;
+            })
     </script>
 </body>
 </html>
