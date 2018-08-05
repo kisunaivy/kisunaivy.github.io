@@ -6,34 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>莉丰慧民Ｖ</title>
+    <link rel="shortcut icon" href="img/favicon-20180804114149308.ico" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
-        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+        /* @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i'); */
+        /* @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i'); */
+        /* @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700); */
 
         * {
             margin: 0;
             padding: 0;
         }
 
-        .logo {
-            width: 80px;
-            height: 80px;
-            background-image: url('img/logo.png');
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 50%;
-            position: absolute;
-            left: 20px;
-            top: 10px;
-        }
-
         body {
             height: 5000px;
             position: relative;
             background-color: rgba(255, 244, 216, 0.5);
+        }
+
+        /* Navber @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        .logo {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            z-index: 2;
         }
 
         ul {
@@ -43,7 +41,7 @@
 
         .nav {
             width: 100%;
-            height: 100px;
+            height: 70px;
             background-color: rgba(255, 244, 216, 0.5);
             position: relative;
         }
@@ -52,7 +50,7 @@
             display: inline-block;
             width: 80px;
             height: 30px;
-            background-color: gray;
+            background-color: rgba(255, 244, 216, 1);
             position: absolute;
             bottom: 20px;
             text-align: center;
@@ -91,7 +89,7 @@
             position: absolute;
             width: 100%;
             height: 0;
-            background-color: gray;
+            background-color: rgba(119, 163, 240,0.8);
             margin: 0;
             transition: 0.8s;
             display: block;
@@ -114,6 +112,12 @@
             height: 62px;
         }
 
+        /* nav漢堡條 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+       
+
+
+
+
         /* .relative:hover > .absolute.b{ */
 
         /* display: block; */
@@ -121,6 +125,8 @@
         /* height: 93px; */
 
         /* } */
+
+        /* Banner @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
         #banner-swiper {
             width: 100%;
@@ -139,6 +145,8 @@
             line-height: 50px;
         }
 
+        /* 故事 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
         .seastion1 {
             width: 80%;
             margin: auto;
@@ -151,23 +159,25 @@
             text-align: center;
             font-size: 50px;
         }
-        .s1_box1{
+
+        .s1_box1 {
             width: 50%;
             display: inline-block;
             float: left;
         }
 
-        .sm-title1{
+        .sm-title1 {
             color: #CD853F;
             font-size: 30px;
             padding: 30px;
-            
+
         }
 
         #seastion1-swiper {
             width: 80%;
             margin-bottom: 25px;
             display: inline-block;
+            margin-left: 65px;
 
         }
 
@@ -221,6 +231,7 @@
             top: 0;
             left: 0;
             overflow: hidden;
+            font-size: 15px;
         }
 
         #seastion1-swiper {
@@ -230,7 +241,7 @@
         #seastion1-swiper .swiper-slide:hover .cover {
             height: 100%;
             background-color: rgba(119, 163, 240, 0.5);
-            padding: 100px 0 0 0;
+            padding: 50px 0 0 0;
 
         }
 
@@ -243,55 +254,53 @@
             width: 80%;
             line-height: 25px;
             margin: 0 auto;
-        
-        }
 
-       
+        }
 
         .s1-box2 {
             width: 40%;
-            height: 700px;
             display: inline-block;
+
         }
 
         .history_text {
-            width: 100%;
-            margin: 0 auto;
-            line-height: 81px;
+            width: 110%;
+            line-height: 40px;
+            letter-spacing: 4px;
+            padding-left: 80px;
         }
+
+        /* TNVR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
         .seastion2 {
             width: 80%;
-            margin: auto;
-
-        }
-
-        .s2-title1 {
-            color: #A0522D;
-            padding: 0 0 25px 0;
-            text-align: center;
-            font-size: 50px;
-            font-weight: bold;
-        }
-
-        .s2-title1-img {
-            width: 100%;
-            height: 600px;
-            color: #CD853F;
-            padding: 50px;
-            font-size: 30px;
-            background-image: url("img/tnvr.png");
-            background-position: 60% 50%;
-            background-repeat: no-repeat;
-            background-size: contain;
             margin: 0 auto;
+
         }
 
+        .s2_box{
+            width: 80%;
+            display: inline;
+                 
+        }
+
+        .s2-title1-img{
+            width: 45%;
+            color: #CD853F;
+            margin-bottom: 50px;
+        }
+
+        .tnvriframe {
+            width: 560px;
+            height: 315px;
+            
+        }
+
+        /* 毛小孩之家 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
         .seastion3 {
             margin: 0;
             padding: 0;
-            width: 100%;
             display: flex;
             display: -webkit-flex;
             justify-content: center;
@@ -338,7 +347,6 @@
             display: -webkit-flex;
             -webkit-justify-content: center;
             -webkit-flex-direction: column;
-
             order: 1;
             left: 0;
             margin: auto;
@@ -489,24 +497,16 @@
             transform: translateX(0);
         }
 
+        /* 救護站 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
         .seastion4 {
             width: 80%;
             margin: auto;
         }
 
-        .sm-title1 {
-            width: 100%;
-        }
-
         .s4-blood-img {
-            width: 30%;
-            height: 600px;
-            background-image: url("img/救護站/抽血順序-01.png");
-            background-position: 50px 50%;
-            background-repeat: no-repeat;
-            background-size: cover;
             display: inline-block;
-            margin: 50px;
+            margin-left: 50px;
         }
 
         .s4-condition {
@@ -519,26 +519,16 @@
 
         .s4-dog-img {
             width: 50%;
-            height: 600px;
-            background-image: url("img/救護站/dog-01.png");
-            background-position: 20px 50px;
-            background-repeat: no-repeat;
-            background-size: contain;
             position: absolute;
-            top: 10px;
+            top: 80px;
             left: 0;
 
         }
 
         .s4-cat-img {
             width: 50%;
-            height: 600px;
-            background-image: url("img/救護站/cat.png");
-            background-position: 30px 50px;
-            background-repeat: no-repeat;
-            background-size: cover;
             position: absolute;
-            top: 10px;
+            top: 80px;
             right: 0;
 
         }
@@ -548,8 +538,8 @@
             height: 50px;
             background-color: rgba(119, 163, 240, 0);
             position: absolute;
-            top: 0;
-            right: 0;
+            top: -50px;
+            right: 40px;
             transition: 1s;
             text-align: center;
             line-height: 50px;
@@ -557,12 +547,12 @@
         }
 
         .s4-dog-img:hover .s4-cover {
-            height: 100%;
+            height: 120%;
             background-color: rgba(119, 163, 240, 0.8);
         }
 
         .s4-cat-img:hover .s4-cover {
-            height: 100%;
+            height: 120%;
             background-color: rgba(119, 163, 240, 0.8);
         }
 
@@ -577,139 +567,180 @@
             letter-spacing: 10pt;
         }
 
-        .s4-doctor {
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        .dogdoctor {
+            width: 80%;
+            height: 700px;
+            margin: auto;
+            font-family: 'Roboto Slab', serif;
+            font-weight: 300px;
+            font-size: 16px;
+            line-height: 1.4em;
+            color: #333;
+        }
+
+        .animation {
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        .s4_container {
+            position: relative;
+            float: left;
+            width: 100%;
+            height: 700px;
+            margin: 10px 0 10px 4%;
+            -webkit-perspective: 800px;
+            -moz-perspective: 800px;
+            -o-perspective: 800px;
+            perspective: 800px;
+        }
+
+        .s4_container:first-child {
+            margin-left: 0;
+        }
+
+        .card {
+            width: 100%;
+            height: 700px;
+            position: absolute;
+            cursor: pointer;
+            -webkit-transition: -webkit-transform 0.4s;
+            -moz-transition: -moz-transform 0.4s;
+            -o-transition: -o-transform 0.4s;
+            transition: transform 0.4s;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -o-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+
+        .card.flipped {
+            -webkit-transform: rotateY( 180deg);
+            -moz-transform: rotateY( 180deg);
+            -o-transform: rotateY( 180deg);
+            transform: rotateY( 180deg);
+        }
+
+        .card .front,
+        .card .back {
+            display: block;
+            height: 100%;
+            width: 100%;
+            line-height: 260px;
+            color: black;
+            text-align: center;
+            font-size: 4em;
+            position: absolute;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -o-backface-visibility: hidden;
+            backface-visibility: hidden;
+            box-shadow: 3px 5px 20px 2px rgba(0, 0, 0, 0.25);
+        }
+       
+        .card .back {
+            width: 100%;
+            padding-left: 3%;
+            padding-right: 3%;
+            font-size: 16px;
+            text-align: left;
+            line-height: 25px;
+        }
+
+        .formItem:first-child {
+            margin-top: 20px;
+        }
+
+        .card .back label {
+            display: inline-block;
+            width: 70px;
+            text-align: left;
+        }
+
+        .card .back {
+            -webkit-transform: rotateY( 180deg);
+            -moz-transform: rotateY( 180deg);
+            -o-transform: rotateY( 180deg);
+            transform: rotateY( 180deg);
+        }
+
+        .s4_container:first-child .card .front {
+            background: #f5dfdf;
+        }
+
+        .s4_container:first-child .card .back {
+            background: #f5dfdf;
+        }
+
+        .cardTitle {
+            font-size: 25px;
+            line-height: 30px;
+            margin: 0;
+            border-bottom: 2px solid #000;
+            margin-bottom: 20px;
+            letter-spacing: 5px;
+        }
+
+        .cardimg{
             width: 100%;
             height: 700px;
             background-image: url("img/救護站/狗醫生流程.png");
             background-position: 50% 50%;
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: contain
         }
 
-        .s4-doctor-text {
-            width: 80%;
-            background-color: rgba(119, 163, 240, 0.8);
-            letter-spacing: 5pt;
-            font-size: 15px;
-            margin: auto;
-            padding: 20px;
-            text-align: center;
-            border: 5px bold darkred;
-
-
+        .cardtext {
+            line-height: 30px;
+            font-size: 20px;
+            letter-spacing: 4px;
         }
 
-        .carousel-3d-slide {
-            height: auto !important;
-            background-color: rgba(0, 0, 0, 0.25) !important;
+        .content {
+            padding: 4%;
+            font-weight: 100;
+            text-align: left;
         }
+
+        /* .carousel-3d-slide { */
+
+        /* height: auto !important; */
+
+        /* background-color: rgba(0, 0, 0, 0.25) !important; */
+
+        /* } */
+
+        /* 暖心時刻 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
         .seastion5 {
             width: 80%;
-            margin: auto;
-            margin-bottom: 500px;
-        }
-
-        #imgstack {
-            width: 300px;
             margin: 0 auto;
-            margin-top: 2%;
-
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
         }
 
-        #imgstack a {
-            width: 288px;
-            height: 350px;
-            position: absolute;
-            display: block;
-            border: 6px solid #f0f0f0;
-            border-radius: 2px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
-            transition: margin .5s;
-            -webkit-transition: margin .5s;
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
+        #seastion5-swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        #seastion5-swiper .swiper-slide {
+            background-position: center;
             background-size: cover;
-
+            width: 300px;
+            height: 300px;
         }
 
-        #imgstack img {
-            width: 288px;
-            max-height: 100%;
 
-        }
 
-        #imgstack a:first-of-type {
-            margin-top: -5px;
-            margin-left: -20px;
-            z-index: 5;
-            transform: rotate(-5deg);
-            -webkit-transform: rotate(-5deg);
-        }
-
-        #imgstack a:nth-of-type(2) {
-            margin-top: -5px;
-            margin-left: -10px;
-            z-index: 1;
-        }
-
-        #imgstack a:nth-of-type(3) {
-            margin-top: -5px;
-            margin-left: 0px;
-            z-index: 1;
-        }
-
-        #imgstack a:nth-of-type(4) {
-            margin-top: -5px;
-            margin-left: 10px;
-            z-index: 1;
-        }
-
-        #imgstack a:last-of-type {
-            transform: rotate(5deg);
-            -webkit-transform: rotate(5deg);
-        }
-
-        #imgstack:hover a:first-of-type {
-            margin-top: 5px;
-        }
-
-        #imgstack:hover a:nth-of-type(2) {
-            margin-left: -400px;
-            margin-top: 5px;
-        }
-
-        #imgstack:hover a:nth-of-type(3) {
-            margin-left: -200px;
-            margin-top: 300px;
-        }
-
-        #imgstack:hover a:nth-of-type(4) {
-            margin-left: 200px;
-            margin-top: 300px;
-        }
-
-        #imgstack:hover a:last-of-type {
-            margin-left: 400px;
-            margin-top: 5px;
-        }
-
-        #imgstack a:first-of-type:hover,
-        #imgstack a:last-of-type:hover {
-            margin-top: -5px;
-        }
-
-        #imgstack a:nth-of-type(2):hover {
-            margin-top: -10px;
-        }
-
-        #imgstack a:nth-of-type(3):hover {
-            margin-top: -10px;
-        }
-
-        #imgstack a:nth-of-type(4):hover {
-            margin-top: -10px;
-        }
+        /* Footer @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
         footer {
             background-color: rgba(119, 163, 240, 0.6);
@@ -717,62 +748,63 @@
             text-align: center;
         }
 
+        /* Go To Top 按鈕 */
+
         #backtop {
-            width: 60px;
-            height: 50px;
+            width: 40px;
+            height: 30px;
             color: darkred;
             position: fixed;
-            bottom: 100px;
-            right: 100px;
+            bottom: 50px;
+            right: 50px;
             background-color: #92bae6;
             border-radius: 50%;
-
         }
-        .clear{
+
+        .clear {
             clear: both;
         }
+        
 
-       
+        @media screen and (max-width: 768px) {
+    
+        }
+            
     </style>
 </head>
 
 <body>
 
-    <!--Navbar Links-->
+    <!--Navbar-->
+  
     <div class="nav">
         <div class="logo">
-            <a href=""></a>
+            <a href="">
+                <img src="img/logo.png" alt="" width="100px" height="100px">
+            </a>
         </div>
         <div>
-            <div class="relative a">
+            <div class="relative a ">
                 <a href="#story">故事</a>
-                <ul class="absolute a">
-                    <li>
-                        <a href="#people">館長介紹</a>
-                    </li>
-                    <li>
-                        <a href="#course">歷程</a>
-                    </li>
-                </ul>
             </div>
-            <div class="relative b">
+            <div class="relative b ">
                 <a href="#tnvr">TNVR</a>
             </div>
-            <div class="relative c">
+            <div class="relative c ">
                 <a href="#kidhome">毛小孩之家</a>
             </div>
-            <div class="relative d">
+            <div class="relative d ">
                 <a href="#ambulance">救護站</a>
                 <ul class="absolute a">
                     <li>
                         <a href="#blood">捐血犬貓</a>
                     </li>
                     <li>
-                        <a href="#doctor">醫療犬</a>
+                        <a href="#doctor">狗醫生</a>
                     </li>
                 </ul>
             </div>
-            <div class="relative e">
+            <div class="relative e ">
                 <a href="#Warmheart">暖心時刻</a>
             </div>
         </div>
@@ -801,7 +833,7 @@
     <div class="seastion1" id="story">
         <div class="title1">故事</div>
         <div class="s1_box1">
-            <h2 class="sm-title1" id="people">館長介紹 </h2>
+            
             <div class="swiper-container" id="seastion1-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -810,8 +842,8 @@
                             <h2 class="s1-name">
                                 <a href="https://www.facebook.com/profile.php?id=100004082835401">大城莉莉</a>
                             </h2>
-                            <h3 class="lg-text">莉丰慧民V館 館長</h3>
-                            <h4 class="sm-text">大城莉莉是位高雄人，因為嫁給日本人而有了日本的姓氏。認識了徐園長後，與她擴建了「護生園狗寶貝園區」建立了「莉丰慧民館」。大城莉莉曾說「救援毛小孩是你我一生的志業，更是闡揚善良美麗的最佳註解。我願意與大家心手相連，共同寫下愛的永遠，期盼我們的天使皆有所養，感恩。」
+                            <h3 class="lg-text">莉丰慧民V館長</h3>
+                            <h4 class="sm-text">大城莉莉是位高雄人，因為嫁給日本人而有了日本的姓氏。認識了徐園長後，與她擴建了「護生園狗寶貝園區」建立了「莉丰慧民館」。她曾說「救援毛小孩是你我一生的志業，更是闡揚善良美麗的最佳註解。我願意與大家心手相連，共同寫下愛的永遠，期盼我們的天使皆有所養，感恩。」
                             </h4>
                         </div>
                     </div>
@@ -822,7 +854,7 @@
                             <h2 class="s1-name">
                                 <a href="https://www.facebook.com/profile.php?id=100010076440962&fref=pb&hc_location=friends_tab">徐雯慧</a>
                             </h2>
-                            <h3 class="lg-text">莉丰慧民V館 館長、徐園長護生園 園長</h3>
+                            <h3 class="lg-text">莉丰慧民V館長、護生園園長</h3>
                             <h4 class="sm-text">無論您是哪一種宗教，希望您每天都能用最真誠的心，為這些孩子祈禱，一心想饒益孩子們的念力是最強大的力量，必能上達諸天聽。
                             </h4>
                         </div>
@@ -834,9 +866,9 @@
                             <h2 class="s1-name">
                                 <a href="https://www.facebook.com/JesseWang630871?fref=pb&hc_location=friends_tab">王丰</a>
                             </h2>
-                            <h3 class="lg-text">莉丰慧民V館 館長、機師</h3>
-                            <h4 class="sm-text">王丰大哥是一名機長。在2002年駕機起飛時，因流浪狗闖入跑道，要求塔台讓 狗兒先通過，登上了新聞版面，而成為了動物保護界的名人。在近幾年因緣認 識了大城莉莉與徐園長並加入了「莉丰慧民館」的團隊一起守護需要幫助的狗
-                                狗們。「只要你我勇氣的投入，我相信公平與正義，終有彰顯的一天。救100 隻狗，你也改變不了這冷漠無情的事，不公不義的世界。救1隻狗，卻能改變 他的一生，你便是他的全世界。」王丰的熱情與努力改變了無數條的生命。
+                            <h3 class="lg-text">莉丰慧民V館長、機師</h3>
+                            <h4 class="sm-text">在2002年駕機起飛時，因流浪狗闖入跑道，要求塔台讓狗兒先通過，登上了新聞版面，而成為了動物保護界的名人。在近幾年因緣認 識了大城莉莉與徐園長並加入了「莉丰慧民館」的團隊
+                                。「只要你我勇氣的投入，我相信公平與正義，終有彰顯的一天。救100隻狗，你也改變不了這冷漠無情的事，不公不義的世界。救1隻狗，卻能改變他的一生，你便是他的全世界。」
                             </h4>
                         </div>
                     </div>
@@ -847,8 +879,8 @@
                             <h2 class="s1-name">
                                 <a href="https://www.facebook.com/vc2706?fref=pb&hc_location=friends_tab">張國彬(Vincent Chang)</a>
                             </h2>
-                            <h3 class="lg-text">莉丰慧民V館 館長、眼科醫師</h3>
-                            <h4 class="sm-text">狗是人類最好的朋友。養一隻狗，牠會用一生的忠誠回報你。給他們一個家，得到的喜樂會遠超過你的付出！這些年因為養狗，救狗，認識了很多愛狗人士，大家一起出力救援，更是倍覺溫暖！世界因為有愛而美麗，想讓生活更有意義，更有樂趣，就從養一隻狗開始吧！生命中自從有了狗的相伴之後，一切都不一樣了。
+                            <h3 class="lg-text">莉丰慧民V館長、眼科醫師</h3>
+                            <h4 class="sm-text">狗是人類最好的朋友。養一隻狗，牠會用一生的忠誠回報你。給他們一個家，得到的喜樂會遠超過你的付出！世界因為有愛而美麗，想讓生活更有意義，更有樂趣，就從養一隻狗開始吧！生命中自從有了狗的相伴之後，一切都不一樣了。
                             </h4>
                         </div>
                     </div>
@@ -859,9 +891,9 @@
                             <h2 class="s1-name">
                                 <a href="https://www.facebook.com/randy.yang.940?fref=pb&hc_location=friends_tab">楊懷民</a>
                             </h2>
-                            <h3 class="lg-text">莉丰慧民V館 館長、演員、劇作家</h3>
-                            <h4 class="sm-text">楊懷民是位著名演員。在一次拜訪流浪動物之家時遇見了與他有緣的Toby，一 隻不出色的流浪狗。但這隻流浪狗卻成了他的家人。這個孩子讓楊懷民先生慢 慢的把工作的時間轉換到他的身上。這個熱愛狗狗又是演員說「我們要一起手
-                                牽手，把我們心裡濃濃的愛散佈出去，從人到毛小孩，從毛小孩到人，生生不 息，永永遠遠。因為有一群人一起努力奮鬥，所以大家永不寂寞。」希望把這 份愛散播出去。
+                            <h3 class="lg-text">莉丰慧民V館長、演員、劇作家</h3>
+                            <h4 class="sm-text">在一次拜訪流浪動物之家時遇見了與他有緣的Toby，一隻不出色的流浪狗。但這隻流浪狗卻成了他的家人。他說「我們要一起手
+                                牽手，把我們心裡濃濃的愛散佈出去，從人到毛小孩，從毛小孩到人，生生不息，永永遠遠。因為有一群人一起努力奮鬥，所以大家永不寂寞。」
                             </h4>
                         </div>
                     </div>
@@ -871,23 +903,28 @@
             </div>
         </div>
         <div class="s1-box2">
-            <h2 class="sm-title1" id="course">歷程</h2>
+            
             <div class="history_text">
-                <h3>成立時間於2013年9月7日</h3>
-                <h3>［台南狗寶貝護生園］救援傷殘老弱和各縣市收容所的毛小孩</h3>
-                <h3>於台南建［莉丰慧民Ｖ館南館］</h3>
-                <h3>2015年在宜蘭［莉丰慧民Ｖ-宜蘭北館］作為送養平台</h3>
-                <h3>2017年正式組成［台灣莉丰慧民Ｖ關懷動物協會］</h3>
-                <h3>2018年［莉丰慧民Ｖ-宜蘭北館］改名為［宜蘭北館-飛翔蜜境］</h3>
+                <h4>2013年9月7日成立</h4>
+                <h4>建［台南狗寶貝護生園］
+                    <br>　－救援傷殘老弱和各縣市收容所的毛小孩</h4>
+                <h4>建［莉丰慧民Ｖ館-台南南館］</h4>
+                <h4>2015年在宜蘭建［莉丰慧民Ｖ-宜蘭北館］
+                    <br>　－作為送養平台</h4>
+                <h4>2017年正式組成［台灣莉丰慧民Ｖ關懷動物協會］</h4>
+                <h4>2018年［莉丰慧民Ｖ-宜蘭北館］改名為［宜蘭北館-飛翔蜜境］</h4>
             </div>
         </div>
-    <div class="clear"></div>
+        <div class="clear"></div>
     </div>
 
     <!--TNVR-->
     <div class="seastion2" id="tnvr">
-        <div class="s2-title1">TNVR</div>
-        <div class="s2-title1-img" data-aos="fade-right" data-aos-duration="2000"></div>
+        <div class="title1">TNVR</div>
+        <div class="s2_box">
+            <img class="s2-title1-img" src="img/tnvr.png" alt="" data-aos="fade-right" data-aos-duration="2000">
+            <iframe class="tnvriframe" src="https://player.vimeo.com/video/108523957" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 
     <!--毛小孩之家-->
@@ -958,29 +995,33 @@
     <!--救護站-->
     <div class="seastion4" id="ambulance">
         <div class="title1">救護站</div>
-        <h2 class="sm-title1">貓狗捐血過程</h2>
-        <div class="s4-blood-img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000"></div>
+        <h2 class="sm-title1">捐血犬貓</h2>
+        <div class="s4-blood-img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+            <img src="img/救護站/抽血順序-01.png" alt="" width="80%" height="600px">
+        </div>
         <div class="s4-condition" id="blood">
             <div class="s4-dog-img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000"
                 data-aos-delay="1000">
+                <img src="img/救護站/dog.png" alt="" width="80%" height="450px">
                 <div class="s4-cover">
                     <h2>汪汪の捐血條件</h2>
-                    <p>年紀：一歲以上、八歲以下</p>
-                    <p>體重：15公斤以上</p>
-                    <p>身體狀況：無重大疾病病史、每年按時接種疫苗、每月按時預防心絲蟲、跳蚤、壁蝨，且未曾輸過血</p>
-                    <p>捐血時間間隔：2個月一次</p>
-                    <p>捐血量：16-18毫升/每公斤</p>
+                    <br>年紀：一歲以上、八歲以下
+                    <br>體重：15公斤以上
+                    <br>身體狀況：無重大疾病病史、每年按時接種疫苗、每月按時預防心絲蟲、跳蚤、壁蝨，且未曾輸過血
+                    <br>捐血時間間隔：2個月一次
+                    <br>捐血量：16-18毫升/每公斤
                 </div>
             </div>
             <div class="s4-cat-img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000"
                 data-aos-delay="1000">
+                <img src="img/救護站/cat.png" alt="" width="80%" height="450px">
                 <div class="s4-cover">
                     <h2>喵喵の捐血條件</h2>
-                    <p>年紀：一歲以上、六歲以下</p>
-                    <p>體重：5公斤以上</p>
-                    <p>身體狀況：不能有貓愛滋及貓白血病</p>
-                    <p>捐血時間間隔：2個月一次</p>
-                    <p>捐血量：11-13毫升/每公斤</p>
+                    <br>年紀：一歲以上、六歲以下
+                    <br>體重：5公斤以上
+                    <br>身體狀況：不能有貓愛滋及貓白血病
+                    <br>捐血時間間隔：2個月一次
+                    <br>捐血量：11-13毫升/每公斤
                 </div>
             </div>
         </div>
@@ -988,33 +1029,54 @@
             <a href="https://www.facebook.com/petblood/">寵物捐血資料庫</a>
         </h2>
         <h2 class="sm-title1" id="doctor">狗醫生</h2>
-        <div class="s4-doctor" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="2000"></div>
-        <h4 class="s4-doctor-text" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-            狗醫生的服務內容分為『陪伴活動』及『復健治療』，在『陪伴活動』中服務對象可獲得與動物相伴的樂趣，並增加他們被探視、得到關懷的機會，而『復健治療』則配合復健師的療程設計，協助進行患者復健，例如利用丟球、梳毛、撫摸狗兒、牽狗兒散步等等活動，服務對象自發性地增加局部或全身肢體活動度，或利用狗兒為話題與服務對象進行對話，刺激其口語運用，並且於無形間進行辨識個體、追溯記憶等刺激心智的練習。</h4>
+        <div class="dogdoctor">
+            <div class="s4_container">
+                <div class="card">
+                    <div class="front">
+                        <div class="cardimg"></div>
+                    </div>
+                    <div class="back">
+                        <div class="content">
+                            <h3 class="cardTitle">狗醫生服務項目</h3>
+                            <h4 class="cardtext">
+                                狗醫生的服務內容分為『陪伴活動』及『復健治療』。
+                                <br>『陪伴活動』中服務對象可獲得與動物相伴的樂趣，並增加他們被探視、得到關懷的機會。
+                                <br>『復健治療』是配合復健師的療程設計，協助進行患者復健，例如利用丟球、梳毛、撫摸狗兒、牽狗兒散步等等活動，服務對象自發性地增加局部或全身肢體活動度，或利用狗兒為話題與服務對象進行對話，刺激其口語運用，並且於無形間進行辨識個體、追溯記憶等刺激心智的練習。</h4>
+                            <br>
+                            <iframe width="640" height="360" src="https://www.youtube.com/embed/DT-SLgiPGpg" frameborder="0" allow="autoplay; encrypted-media"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="blood-bank">
+            <a href="http://www.doctordog.org.tw/about.php">台灣狗醫生</a>
+        </h2>
     </div>
+
 
     <!--暖心時刻-->
     <div class="seastion5" id="Warmheart">
         <div class="title1">暖心時刻</div>
-        <h2 class="sm-title1">領養照片</h2>
-        <div id="imgstack">
-            <a href="#">
-                <img src="img/領養訊息/1.jpg" alt />
-            </a>
-            <a href="#">
-                <img src="img/領養訊息/2.jpg" alt />
-            </a>
-            <a href="#">
-                <img src="img/領養訊息/3.jpg" alt />
-            </a>
-            <a href="#">
-                <img src="img/領養訊息/4.jpg" alt />
-            </a>
-            <a href="#">
-                <img src="img/領養訊息/5.jpg" alt />
-            </a>
+        <div class="swiper-container" id="seastion5-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(img/暖心/1.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(img/暖心/2.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(img/暖心/3.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(img/暖心/4.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(img/暖心/5.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(img/暖心/6.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(img/暖心/7.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(img/暖心/8.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(img/暖心/9.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(img/暖心/10.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(img/暖心/11.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(img/暖心/12.jpg)"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
-
     </div>
 
     <button id="backtop">Top</button>
@@ -1026,13 +1088,15 @@
     </footer>
 
 
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
     <script>
         AOS.init();
+
+        $("#nav-toggle").click(function () {
+			$(".nav_menu").toggleClass("active");
+		})
 
         var swiper = new Swiper('#banner-swiper', {
             slidesPerView: 1,
@@ -1094,6 +1158,23 @@
             }
         });
 
+        var swiper = new Swiper('#seastion5-swiper', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+
         $(window).scroll(function () {
             //取得目前捲軸,捲動高度
             var scrollTop = $(window).scrollTop();
@@ -1108,6 +1189,7 @@
                 $("#backtop").hide();
             }
         })
+
         $("#backtop").click(function () {
             console.log("scrollTop")
             //$(window).scrollTop(0);
@@ -1116,6 +1198,10 @@
             }, 'slow');
             return false;
         })
+
+        $('.card').click(function () {
+            $(this).toggleClass('flipped');
+        });
     </script>
 </body>
 

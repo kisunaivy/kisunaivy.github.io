@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
+
+        body {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 300px;
+            font-size: 16px;
+            line-height: 1.4em;
+            color: #333;
+            background: #eee;
+        }
+
+        .animation {
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        .container {
+            position: relative;
+            float: left;
+            width: 700px;
+            height: 500px;
+            margin: 10px 0 10px 4%;
+            -webkit-perspective: 800px;
+            -moz-perspective: 800px;
+            -o-perspective: 800px;
+            perspective: 800px;
+        }
+
+        .container:first-child {
+            margin-left: 0;
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            cursor: pointer;
+            -webkit-transition: -webkit-transform 0.4s;
+            -moz-transition: -moz-transform 0.4s;
+            -o-transition: -o-transform 0.4s;
+            transition: transform 0.4s;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -o-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+
+        .card.flipped {
+            -webkit-transform: rotateY( 180deg);
+            -moz-transform: rotateY( 180deg);
+            -o-transform: rotateY( 180deg);
+            transform: rotateY( 180deg);
+        }
+
+        .card .front,
+        .card .back {
+            display: block;
+            height: 100%;
+            width: 100%;
+            line-height: 260px;
+            color: black;
+            text-align: center;
+            font-size: 4em;
+            position: absolute;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -o-backface-visibility: hidden;
+            backface-visibility: hidden;
+            box-shadow: 3px 5px 20px 2px rgba(0, 0, 0, 0.25);
+        }
+
+        .card .back {
+            width: 94%;
+            padding-left: 3%;
+            padding-right: 3%;
+            font-size: 16px;
+            text-align: left;
+            line-height: 25px;
+        }
+
+        .formItem:first-child {
+            margin-top: 20px;
+        }
+
+        .card .back label {
+            display: inline-block;
+            width: 70px;
+            text-align: left;
+        }
+
+        .card .back {
+            -webkit-transform: rotateY( 180deg);
+            -moz-transform: rotateY( 180deg);
+            -o-transform: rotateY( 180deg);
+            transform: rotateY( 180deg);
+        }
+
+        .container:first-child .card .front {
+            background: #f5eded;
+        }
+
+        .container:first-child .card .back {
+            background: #f5eded;
+        }
+
+        .cardTitle {
+            font-size: 1.4em;
+            line-height: 1.2em;
+            margin: 0;
+        }
+
+        .content {
+            padding: 4%;
+            font-weight: 100;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="front">
+                <img src="img/救護站/狗醫生流程.png" alt="" width="700px" height="500px">
+            </div>
+            <div class="back">
+                <div class="content">
+                    <h3 class="cardTitle">狗醫生服務項目</h3>
+                    <p>狗醫生的服務內容分為『陪伴活動』及『復健治療』，在『陪伴活動』中服務對象可獲得與動物相伴的樂趣，並增加他們被探視、得到關懷的機會，而『復健治療』則配合復健師的療程設計，協助進行患者復健，例如利用丟球、梳毛、撫摸狗兒、牽狗兒散步等等活動，服務對象自發性地增加局部或全身肢體活動度，或利用狗兒為話題與服務對象進行對話，刺激其口語運用，並且於無形間進行辨識個體、追溯記憶等刺激心智的練習。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $('.card').click(function () {
+            $(this).toggleClass('flipped');
+        });
+    </script>
+
+</body>
+
+</html>
