@@ -10,17 +10,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
     <style>
-        /* @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i'); */
-        /* @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i'); */
-        /* @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700); */
-
+      
         * {
             margin: 0;
             padding: 0;
         }
 
         body {
-            height: 5000px;
+            height: 4500px;
             position: relative;
             background-color: rgba(255, 244, 216, 0.5);
         }
@@ -89,7 +86,7 @@
             position: absolute;
             width: 100%;
             height: 0;
-            background-color: rgba(119, 163, 240,0.8);
+            background-color: rgba(119, 163, 240, 0.8);
             margin: 0;
             transition: 0.8s;
             display: block;
@@ -111,20 +108,6 @@
             display: block;
             height: 62px;
         }
-
-        /* nav漢堡條 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-       
-
-
-
-
-        /* .relative:hover > .absolute.b{ */
-
-        /* display: block; */
-
-        /* height: 93px; */
-
-        /* } */
 
         /* Banner @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
@@ -162,7 +145,6 @@
 
         .s1_box1 {
             width: 50%;
-            display: inline-block;
             float: left;
         }
 
@@ -175,9 +157,9 @@
 
         #seastion1-swiper {
             width: 80%;
-            margin-bottom: 25px;
+            margin-bottom: 50px;
             display: inline-block;
-            margin-left: 65px;
+            margin-left: 60px;
 
         }
 
@@ -234,10 +216,6 @@
             font-size: 15px;
         }
 
-        #seastion1-swiper {
-            height: 500px;
-        }
-
         #seastion1-swiper .swiper-slide:hover .cover {
             height: 100%;
             background-color: rgba(119, 163, 240, 0.5);
@@ -264,10 +242,10 @@
         }
 
         .history_text {
-            width: 110%;
+            width: 100%;
             line-height: 40px;
             letter-spacing: 4px;
-            padding-left: 80px;
+            padding-left: 60px;
         }
 
         /* TNVR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -278,13 +256,13 @@
 
         }
 
-        .s2_box{
-            width: 80%;
-            display: inline;
-                 
+        .s2_box {
+            width: 100%;
+            display: block;
+
         }
 
-        .s2-title1-img{
+        .s2-title1-img {
             width: 45%;
             color: #CD853F;
             margin-bottom: 50px;
@@ -293,7 +271,8 @@
         .tnvriframe {
             width: 560px;
             height: 315px;
-            
+            margin-left: 80px;
+
         }
 
         /* 毛小孩之家 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -504,13 +483,20 @@
             margin: auto;
         }
 
-        .s4-blood-img {
+        .s4-blood {
+            width: 100%;
             display: inline-block;
-            margin-left: 50px;
+
+        }
+
+        .s4-blood>img {
+            width: 25%;
+            height: 600px;
+            margin-right: 100px;
         }
 
         .s4-condition {
-            width: 50%;
+            width: 60%;
             height: 600px;
             position: relative;
             margin: 0 auto;
@@ -520,7 +506,7 @@
         .s4-dog-img {
             width: 50%;
             position: absolute;
-            top: 80px;
+            top: 40px;
             left: 0;
 
         }
@@ -528,7 +514,7 @@
         .s4-cat-img {
             width: 50%;
             position: absolute;
-            top: 80px;
+            top: 40px;
             right: 0;
 
         }
@@ -573,11 +559,6 @@
             width: 80%;
             height: 700px;
             margin: auto;
-            font-family: 'Roboto Slab', serif;
-            font-weight: 300px;
-            font-size: 16px;
-            line-height: 1.4em;
-            color: #333;
         }
 
         .animation {
@@ -642,7 +623,7 @@
             backface-visibility: hidden;
             box-shadow: 3px 5px 20px 2px rgba(0, 0, 0, 0.25);
         }
-       
+
         .card .back {
             width: 100%;
             padding-left: 3%;
@@ -686,7 +667,7 @@
             letter-spacing: 5px;
         }
 
-        .cardimg{
+        .cardimg {
             width: 100%;
             height: 700px;
             background-image: url("img/救護站/狗醫生流程.png");
@@ -707,13 +688,14 @@
             text-align: left;
         }
 
-        /* .carousel-3d-slide { */
+        .cardif {
+            width: 640px;
+            height: 315px;
+        }
 
-        /* height: auto !important; */
-
-        /* background-color: rgba(0, 0, 0, 0.25) !important; */
-
-        /* } */
+        .cardif1 {
+            display: none;
+        }
 
         /* 暖心時刻 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
@@ -764,19 +746,243 @@
         .clear {
             clear: both;
         }
-        
+
+        .nav_rwd{
+            display: none;
+        }
+
+        @media screen and (max-width: 1600px) {
+
+            .s2_box {
+                display: inline;
+
+            }
+
+            .s2-title1-img {
+                width: 80%;
+                margin-bottom: 30px;
+                margin-left: 120px;
+            }
+
+            .tnvriframe {
+                width: 100%;
+                margin: auto;
+            }
+
+        }
+
+        @media screen and (max-width: 1100px) {
+            .s2-title1-img {
+                margin-left: 80px;
+            }
+
+            .card {
+                height: 600px;
+            }
+
+            .cardTitle {
+                font-size: 20px;
+                line-height: 30px;
+                letter-spacing: 5px;
+            }
+
+            .cardimg {
+                height: 600px;
+            }
+
+            .cardtext {
+                font-size: 15px;
+                line-height: 25px;
+                letter-spacing: 3px;
+            }
+
+            .cardif {
+                width: 480px;
+                height: 270px;
+            }
+
+        }
+
+        @media screen and (max-width: 849px) {
+            .seastion4 {
+                width: 90%;
+            }
+
+        }
 
         @media screen and (max-width: 768px) {
-    
+            .title1 {
+                padding: 30px 0 15px 0;
+                font-size: 30px;
+            }
+            .sm-title1 {
+                font-size: 20px;
+                padding: 25px;
+            }
+            .seastion1 {
+                width: 100%;
+
+            }
+            .s1-box1 {
+                width: 50%;
+                padding: 0;
+            }
+            #seastion1-swiper {
+                width: 90%;
+                margin: 0;
+            }
+
+            .s1-box2 {
+                width: 50%;
+
+            }
+            .history_text {
+                width: 100%;
+                padding: 0;
+                font-size: 12px;
+            }
+            .seastion2 {
+                width: 100%;
+            }
+
+            .s2_box {
+                display: inline;
+            }
+
+            .s2-title1-img {
+                width: 100%;
+                margin: 0;
+            }
+
+            .tnvriframe {
+                width: 100%;
+                margin: auto;
+
+            }
+
+            .seastion4 {
+                width: 100%;
+            }
+
+            .s4-blood>img {
+                width: 50%;
+                height: 600px;
+                margin-left: 200px;
+                margin-bottom: 30px;
+            }
+
+            .s4-condition {
+                width: 100%;
+                height: 530px;
+            }
+
+            .dogdoctor {
+                width: 70%;
+                height: 350px;
+                margin: auto;
+            }
+
+            .s4_container {
+                height: 350px;
+                margin: 10px 0 30px 4%;
+
+            }
+            .card {
+                width: 100%;
+                height: 350px;
+            }
+
+            .cardTitle {
+                font-size: 20px;
+                line-height: 25px;
+                letter-spacing: 4px;
+            }
+
+            .cardimg {
+                width: 100%;
+                height: 350px;
+            }
+
+            .cardtext {
+                font-size: 15px;
+                line-height: 20px;
+                letter-spacing: 3px;
+            }
+            .cardif {
+                display: none;
+            }
+
+            .cardif1 {
+                display: block;
+                width: 640px;
+                height: 315px;
+                margin: auto;
+            }
         }
+
+        @media screen and (max-width: 767px) {
+            .nav{
+                display: none;
+            }
+            .nav_rwd{
+                display: inline;
+            }
+            .menu {
+                /*隱藏選單開始*/
+                max-height: 0px;
+                overflow: hidden;
+                /*隱藏選單結束*/
+                transition: max-height 1s;
+                /*產生動畫效果*/
+                margin-top: 0;
+                /*絕對定位疊在網頁上*/
+                position: absolute;
+                /*表單疊在上面*/
+                z-index: 100;
+                /*權重較高可以蓋掉*/
+                /*header 80px+1px boder 線條*/
+                top: 50px;
+                /*表單從下往上長*/
+                left: 0;
+                right: 0;
+                /*使選單左右滿版*/
+                background: rgb(100, 172, 206);
+                
+            }
+            .menu li {
+                float: none;
+                border-bottom: 1px dashed #69CA62;
+                padding: 25px 0;
+                
+            }
+            .menu li a {
+                transition: all 0.3s;
+                
+            }
+            .menu li a:hover {
+                background: #69CA62;
+                color: #fff;
+                
+            }
+            .showmenu {
+                display: block;
+                float: right;
+                margin: 1em;
+                
+            }
+            /*jQ點擊後動態在 body 加上 class */
+            .menu-show .menu {
+                max-height: 500px;
+            }
             
+        }
+
     </style>
 </head>
 
 <body>
 
     <!--Navbar-->
-  
     <div class="nav">
         <div class="logo">
             <a href="">
@@ -810,6 +1016,23 @@
         </div>
     </div>
 
+    <div class="nav_rwd">
+        <div class="logo">
+            <a href="">
+                <img src="img/logo.png" alt="" width="40px" height="40px">
+            </a>
+        </div>
+        <ul class="menu">
+            
+            <li><a href="#story">故事</a></li>
+            <li><a href="#tnvr">TNVR</a></li>
+            <li><a href="#kidhome">毛小孩之家</a></li>
+            <li><a href="#ambulance">救護站</a></li>
+            <li><a href="#Warmheart">暖心時刻</a></li>
+        </ul>
+        <a href="#" class="showmenu">三</a>
+  </div>
+
     <div class="swiper-container" id="banner-swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -833,7 +1056,6 @@
     <div class="seastion1" id="story">
         <div class="title1">故事</div>
         <div class="s1_box1">
-            
             <div class="swiper-container" id="seastion1-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -867,8 +1089,7 @@
                                 <a href="https://www.facebook.com/JesseWang630871?fref=pb&hc_location=friends_tab">王丰</a>
                             </h2>
                             <h3 class="lg-text">莉丰慧民V館長、機師</h3>
-                            <h4 class="sm-text">在2002年駕機起飛時，因流浪狗闖入跑道，要求塔台讓狗兒先通過，登上了新聞版面，而成為了動物保護界的名人。在近幾年因緣認 識了大城莉莉與徐園長並加入了「莉丰慧民館」的團隊
-                                。「只要你我勇氣的投入，我相信公平與正義，終有彰顯的一天。救100隻狗，你也改變不了這冷漠無情的事，不公不義的世界。救1隻狗，卻能改變他的一生，你便是他的全世界。」
+                            <h4 class="sm-text">在2002年駕機起飛時，因流浪狗闖入跑道，要求塔台讓狗兒先通過，登上了新聞版面，而成為了動物保護界的名人。在近幾年因緣認 識了大城莉莉與徐園長並加入了「莉丰慧民館」的團隊 。「只要你我勇氣的投入，我相信公平與正義，終有彰顯的一天。救100隻狗，你也改變不了這冷漠無情的事，不公不義的世界。救1隻狗，卻能改變他的一生，你便是他的全世界。」
                             </h4>
                         </div>
                     </div>
@@ -892,8 +1113,7 @@
                                 <a href="https://www.facebook.com/randy.yang.940?fref=pb&hc_location=friends_tab">楊懷民</a>
                             </h2>
                             <h3 class="lg-text">莉丰慧民V館長、演員、劇作家</h3>
-                            <h4 class="sm-text">在一次拜訪流浪動物之家時遇見了與他有緣的Toby，一隻不出色的流浪狗。但這隻流浪狗卻成了他的家人。他說「我們要一起手
-                                牽手，把我們心裡濃濃的愛散佈出去，從人到毛小孩，從毛小孩到人，生生不息，永永遠遠。因為有一群人一起努力奮鬥，所以大家永不寂寞。」
+                            <h4 class="sm-text">在一次拜訪流浪動物之家時遇見了與他有緣的Toby，一隻不出色的流浪狗。但這隻流浪狗卻成了他的家人。他說「我們要一起手 牽手，把我們心裡濃濃的愛散佈出去，從人到毛小孩，從毛小孩到人，生生不息，永永遠遠。因為有一群人一起努力奮鬥，所以大家永不寂寞。」
                             </h4>
                         </div>
                     </div>
@@ -903,7 +1123,7 @@
             </div>
         </div>
         <div class="s1-box2">
-            
+
             <div class="history_text">
                 <h4>2013年9月7日成立</h4>
                 <h4>建［台南狗寶貝護生園］
@@ -995,64 +1215,67 @@
     <!--救護站-->
     <div class="seastion4" id="ambulance">
         <div class="title1">救護站</div>
-        <h2 class="sm-title1">捐血犬貓</h2>
-        <div class="s4-blood-img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-            <img src="img/救護站/抽血順序-01.png" alt="" width="80%" height="600px">
-        </div>
-        <div class="s4-condition" id="blood">
-            <div class="s4-dog-img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000"
-                data-aos-delay="1000">
-                <img src="img/救護站/dog.png" alt="" width="80%" height="450px">
-                <div class="s4-cover">
-                    <h2>汪汪の捐血條件</h2>
-                    <br>年紀：一歲以上、八歲以下
-                    <br>體重：15公斤以上
-                    <br>身體狀況：無重大疾病病史、每年按時接種疫苗、每月按時預防心絲蟲、跳蚤、壁蝨，且未曾輸過血
-                    <br>捐血時間間隔：2個月一次
-                    <br>捐血量：16-18毫升/每公斤
-                </div>
-            </div>
-            <div class="s4-cat-img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000"
-                data-aos-delay="1000">
-                <img src="img/救護站/cat.png" alt="" width="80%" height="450px">
-                <div class="s4-cover">
-                    <h2>喵喵の捐血條件</h2>
-                    <br>年紀：一歲以上、六歲以下
-                    <br>體重：5公斤以上
-                    <br>身體狀況：不能有貓愛滋及貓白血病
-                    <br>捐血時間間隔：2個月一次
-                    <br>捐血量：11-13毫升/每公斤
-                </div>
-            </div>
-        </div>
-        <h2 class="blood-bank">
-            <a href="https://www.facebook.com/petblood/">寵物捐血資料庫</a>
-        </h2>
-        <h2 class="sm-title1" id="doctor">狗醫生</h2>
-        <div class="dogdoctor">
-            <div class="s4_container">
-                <div class="card">
-                    <div class="front">
-                        <div class="cardimg"></div>
+        <h2 class="sm-title1" id="blood">捐血犬貓</h2>
+        <div class="s4-blood">
+            <img src="img/救護站/抽血順序-01.png" alt="">
+            <div class="s4-condition">
+                <div class="s4-dog-img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000"
+                    data-aos-delay="1000">
+                    <img src="img/救護站/dog.png" alt="" width="80%" height="450px">
+                    <div class="s4-cover">
+                        <h2>汪汪の捐血條件</h2>
+                        <br>年紀：一歲以上、八歲以下
+                        <br>體重：15公斤以上
+                        <br>身體狀況：無重大疾病病史、每年按時接種疫苗、每月按時預防心絲蟲、跳蚤、壁蝨，且未曾輸過血
+                        <br>捐血時間間隔：2個月一次
+                        <br>捐血量：16-18毫升/每公斤
                     </div>
-                    <div class="back">
-                        <div class="content">
-                            <h3 class="cardTitle">狗醫生服務項目</h3>
-                            <h4 class="cardtext">
-                                狗醫生的服務內容分為『陪伴活動』及『復健治療』。
-                                <br>『陪伴活動』中服務對象可獲得與動物相伴的樂趣，並增加他們被探視、得到關懷的機會。
-                                <br>『復健治療』是配合復健師的療程設計，協助進行患者復健，例如利用丟球、梳毛、撫摸狗兒、牽狗兒散步等等活動，服務對象自發性地增加局部或全身肢體活動度，或利用狗兒為話題與服務對象進行對話，刺激其口語運用，並且於無形間進行辨識個體、追溯記憶等刺激心智的練習。</h4>
-                            <br>
-                            <iframe width="640" height="360" src="https://www.youtube.com/embed/DT-SLgiPGpg" frameborder="0" allow="autoplay; encrypted-media"
-                                allowfullscreen></iframe>
-                        </div>
+                </div>
+                <div class="s4-cat-img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000"
+                    data-aos-delay="1000">
+                    <img src="img/救護站/cat.png" alt="" width="80%" height="450px">
+                    <div class="s4-cover">
+                        <h2>喵喵の捐血條件</h2>
+                        <br>年紀：一歲以上、六歲以下
+                        <br>體重：5公斤以上
+                        <br>身體狀況：不能有貓愛滋及貓白血病
+                        <br>捐血時間間隔：2個月一次
+                        <br>捐血量：11-13毫升/每公斤
                     </div>
                 </div>
             </div>
         </div>
-        <h2 class="blood-bank">
-            <a href="http://www.doctordog.org.tw/about.php">台灣狗醫生</a>
-        </h2>
+    </div>
+    <h2 class="blood-bank">
+        <a href="https://www.facebook.com/petblood/">寵物捐血資料庫</a>
+    </h2>
+    <h2 class="sm-title1" id="doctor">狗醫生</h2>
+    <div class="dogdoctor">
+        <div class="s4_container">
+            <div class="card">
+                <div class="front">
+                    <div class="cardimg"></div>
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <h3 class="cardTitle">狗醫生服務項目</h3>
+                        <h4 class="cardtext">
+                            狗醫生的服務內容分為『陪伴活動』及『復健治療』。
+                            <br>『陪伴活動』中服務對象可獲得與動物相伴的樂趣，並增加他們被探視、得到關懷的機會。
+                            <br>『復健治療』是配合復健師的療程設計，協助進行患者復健，例如利用丟球、梳毛、撫摸狗兒、牽狗兒散步等等活動，服務對象自發性地增加局部或全身肢體活動度，或利用狗兒為話題與服務對象進行對話，刺激其口語運用，並且於無形間進行辨識個體、追溯記憶等刺激心智的練習。</h4>
+                        <br>
+                        <iframe class="cardif" src="https://www.youtube.com/embed/DT-SLgiPGpg" frameborder="0" allow="autoplay; encrypted-media"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe class="cardif1" src="https://www.youtube.com/embed/DT-SLgiPGpg" frameborder="0" allow="autoplay; encrypted-media"
+        allowfullscreen></iframe>
+    <h2 class="blood-bank">
+        <a href="http://www.doctordog.org.tw/about.php">台灣狗醫生</a>
+    </h2>
     </div>
 
 
@@ -1095,8 +1318,8 @@
         AOS.init();
 
         $("#nav-toggle").click(function () {
-			$(".nav_menu").toggleClass("active");
-		})
+            $(".nav漢堡條").toggleClass("active");
+        })
 
         var swiper = new Swiper('#banner-swiper', {
             slidesPerView: 1,
@@ -1180,7 +1403,7 @@
             var scrollTop = $(window).scrollTop();
             // console.log("scrollTop")
 
-            //如果捲軸高度>1000,會執行下方程式碼
+            //如果捲軸高度>700,會執行下方程式碼
             if (scrollTop > 700) {
                 $("#backtop").show();
             }
@@ -1201,6 +1424,13 @@
 
         $('.card').click(function () {
             $(this).toggleClass('flipped');
+        });
+
+        $(document).ready(function () {
+            $('.showmenu').on('click', function (e) {
+                e.preventDefault();
+                $('body').toggleClass('menu-show');
+            });
         });
     </script>
 </body>
